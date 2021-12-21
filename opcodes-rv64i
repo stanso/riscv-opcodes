@@ -20,3 +20,9 @@ sd     imm12hi rs1 rs2 imm12lo 14..12=3 6..2=0x08 1..0=3
 slli    rd rs1 31..26=0  shamt 14..12=1 6..2=0x04 1..0=3
 srli    rd rs1 31..26=0  shamt 14..12=5 6..2=0x04 1..0=3
 srai    rd rs1 31..26=16 shamt 14..12=5 6..2=0x04 1..0=3
+
+# DP customization
+dp_inc3d   rd rs1 rs2     31..25=0 14..12=0 6..5=0 4..2=2 1..0=3 # R-type
+dp_ld_inc  rd rs1 imm12            14..12=1 6..5=0 4..2=2 1..0=3 # I-type
+dp_sd_inc  imm12hi rs1 rs2 imm12lo 14..12=2 6..5=0 4..2=2 1..0=3 # S-type
+
