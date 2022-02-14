@@ -130,6 +130,9 @@ csrs = [
   (0xC21, 'vtype'),
   (0xC22, 'vlenb'),
 
+  # Custom User RO
+  (0xCC0, 'vmmergeposcolli'),
+
   # Custom User R/W
   (0x800, 'bindmem0'),
   (0x801, 'bindmem1'),

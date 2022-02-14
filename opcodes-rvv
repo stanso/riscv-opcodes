@@ -338,6 +338,8 @@ vnclip.wv      31..26=0x2f vm vs2 vs1 14..12=0x0 vd 6..0=0x57
 vwredsumu.vs   31..26=0x30 vm vs2 vs1 14..12=0x0 vd 6..0=0x57
 vwredsum.vs    31..26=0x31 vm vs2 vs1 14..12=0x0 vd 6..0=0x57
 
+vmmerge_pos.vv  31..26=0x3F 25=1 vs2 vs1 14..12=0x0 vd 6..0=0x57
+
 # OPIVI
 vadd.vi        31..26=0x00 vm vs2 simm5 14..12=0x3 vd 6..0=0x57
 vrsub.vi       31..26=0x03 vm vs2 simm5 14..12=0x3 vd 6..0=0x57
