@@ -32,7 +32,7 @@ vsstepe64  rd rs1 imm12            14..12=3 6..2=0x02 1..0=3 # I-type
 # (custom1 encoding space)
 vmmerge_pos.vv  31..26=0x00 25=1 vs2 vs1         14..12=0x0 vd 6..2=0x0A 1..0=3 # OPIVV
 vsbindl.v       31..26=0x00 25=1 vs2 simm5       14..12=0x3 vd 6..2=0x0A 1..0=3 # OPIVI
-viota2.m        31..26=0x00 vm   vs2 19..15=0x10 14..12=0x2 vd 6..2=0x0A 1..0=3 # OPMVV
+viota2.m        31..26=0x00 vm   vs2 vs1         14..12=0x2 vd 6..2=0x0A 1..0=3 # OPMVV
 vsbinds.v       31..26=0x01 25=1 vs2 simm5       14..12=0x3 vd 6..2=0x0A 1..0=3 # OPIVI
 
 @custom2            rd rs1 imm12 14..12=0 6..2=0x16 1..0=3
